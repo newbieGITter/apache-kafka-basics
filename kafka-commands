@@ -1,0 +1,26 @@
+Commands to work with Kafka:-
+
+1. To start Zookeeper service:
+	zookeeper-server-start.sh config/zookeeper.properties
+	
+2. To start Kafka server:
+	kafka-server-start.sh config/server.properties
+	
+3. To create a topic
+	kafka-topics --zookeeper 127.0.0.1:2181 --topic topic_name --create --partitions 3 --replication-factor 1	
+		//always use replication factor more than 1, usually 3, in production systems
+		
+4. To list topics:
+	kafka-topics --zookeeper 127.0.0.1:2181 --list
+	
+5. To get more details about a topic:
+	kafka-topics --zookeeper 127.0.0.1:2181 --topic topic_name --describe
+	
+6. To delete a topic:
+	kafka-topics --zookeeper 127.0.0.1:2181 --topic topic_name --delete (Do not delete topics in Windows).
+	
+7. To start producing message to a specific topic:
+	kafka-console-producer.bat --broker-list 127.0.0.1:9092 --topic topic_name 
+	
+8. To consume messages from a topic from the start:
+	kafka-console-consumer.bat --bootstrap-server 127.0.0.1:9092 --topic topic_name --from-beginning
