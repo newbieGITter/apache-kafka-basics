@@ -10,13 +10,12 @@
 	</parent>
 	<groupId>com.example.kafka</groupId>
 	<artifactId>1.udemy-kafka-basics</artifactId>
-	<version>develop-SNAPSHOT</version>
+	<version>rel-2077.01.01-SNAPSHOT</version>
 	<name>1.udemy-kafka-basics</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
-		<!-- <java.version>1.8</java.version> -->
 	</properties>
 
 	<dependencies>
