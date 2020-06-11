@@ -26,5 +26,3 @@ Commands to work with Kafka:-
 	kafka-console-consumer.bat --bootstrap-server 127.0.0.1:9092 --topic topic_name --from-beginning
 
 9. Updated Kafka commands on develop
-
-10. New command on develop
