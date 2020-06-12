@@ -25,4 +25,4 @@ Commands to work with Kafka:-
 8. To consume messages from a topic from the start:
 	kafka-console-consumer.bat --bootstrap-server 127.0.0.1:9092 --topic topic_name --from-beginning
 
-9. New updated dummy command in develop
+9. Updating new updated dummy command in develop
