@@ -17,7 +17,7 @@ public class ConsumerDemo {
 	public static void main(String[] args) throws InterruptedException {
 		Logger logger = LoggerFactory.getLogger(ConsumerDemo.class);
 
-		String bootstrapServer = "127.0.0.1:9092";
+		String bootstrapServer = "127.0.0.1:9092"; // local kafka server address
 		String consumerGroupId = "my-second-application";
 		String topicName = "first_topic";
 
@@ -54,8 +54,6 @@ public class ConsumerDemo {
 			logger.info("Sleeping for a while............");
 			break;
 		}
-
 		// closing consumer
 	}
-
 }
